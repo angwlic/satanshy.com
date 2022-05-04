@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Nunito+Sans:wght@600&display=swap');
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background-size: cover;
+}
+
+#video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  height: 100vh;
+}
+
+#center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  padding: 45px 70px;
+  border-radius: 20px;
+  box-shadow: 2px 6px 15px 5px rgba(0, 0, 0, 0.226);
+}
+
+#center h3 {
+  margin-top: -40px;
+  margin-bottom: 16px;
+  color: #ffffff5b;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.media {
+	border: 2px solid #ffffff;
+	text-align: center;
+	padding: 14px;
+	margin-top: 20px;
+  line-height: 24px;
+	border-radius: 15px;
+  position: relative;
+	transition: all 400ms ease;
+  box-sizing: border-box;
+	width: 250px;
+  font-size: 17px;
+  color: white;
+}
+
+.efct:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  transition: all 1.6s ease;
+  z-index: -1;
+}
+
+.efct:hover:before {
+  width: 100%;
+}
+
+#media:hover {
+	background-color: #ffffff;
+	color: #000;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#name {
+  font-family: 'Nunito Sans', sans-serif;
+	text-align: center;
+	font-size: 30px;
+  padding: 20px;
+	margin-top: 0px;
+	color: #fff;
+  z-index: 1;
+	margin-bottom: 15px;
+}
+
+.pfp {
+	width: 200px;
+  margin-bottom: -12px;
+	height: 200px;
+	border-radius: 300px;
+	background-size: 100%;
+  border: 3px solid #fff;
+}
+
+.bg-op{
+  background-color: rgb(0 0 0 / 70%);
+}
+
+#divider01 {
+    width: 250px;
+    height: 0.3px;
+    margin-top: -1px;
+}
